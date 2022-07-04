@@ -253,7 +253,7 @@ def send_emaile():
     now_f = now.strftime("%Y-%m-%d")
     yesterday_f = yesterday.strftime("%Y-%m-%d")
     day_8ago = day_8ago.strftime("%Y-%m-%d")
-    db = pymysql.connect(user='root', passwd='admin', host='10.16.18.3', port=3306, db='slowlog',
+    db = pymysql.connect(user='xxx', passwd='xxx', host='xxx', port=3306, db='slowlog',
                          charset="UTF8")
     con = db.cursor()
     sql_slow = """ 
