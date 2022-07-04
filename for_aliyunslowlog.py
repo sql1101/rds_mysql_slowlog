@@ -161,7 +161,7 @@ def sql_explain(sql, USER, PASSWORD, IP, PORT, dbname, sql_crc32):
 
 
 def in_db(sqlinfo, instan):
-    db = pymysql.connect(user='root', passwd='admin', host='10.16.18.3', port=3306, db='slowlog',
+    db = pymysql.connect(user='xxx', passwd='xxx', host='xxx', port=3306, db='slowlog',
                          charset="UTF8", autocommit=True)
     for row in sqlinfo:
         searchObj = re.search(r'(.*)information_schema(.*)|commit|prepare|.*DMS-E.*|show .*|call .*|Binlog Dump .*|alter .*', row[u'SQLText'].strip(),
